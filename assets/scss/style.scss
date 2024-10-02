@@ -1,0 +1,61 @@
+/*!
+Template Name: Edutics - Education HTML Template
+Author: temptics pro
+Version: 1.0
+
+-----------------------------------------------------------------------------------
+Front End is Developed By Shaikh Abu Amer on bahalf of temptics pro
+-----------------------------------------------------------------------------------
+
+
+CSS INDEX
+=================== 
+01. CUSTOM PROPERTIES
+02. GLOBAL
+03. Components
+04. Header
+05. Courses
+
+*/
+
+@import "main/breakpoints";
+@import "main/variables";
+@import "main/global";
+@import "main/components";
+
+// sections
+@import "sections/header";
+@import "sections/courses";
+
+
+// inner page
+.ed-countdown .number {
+    color: transparent;
+    -webkit-text-stroke: 1px rgb(255 255 255 / 50%);
+}
+
+.ed-course-details {
+    &-tab-navs {
+        button {
+            &.active {
+                background-color: var(--ed-purple);
+                color: var(--white);
+            }
+        }
+    }
+
+    &-tabs {
+        .ed-tab {
+            overflow: hidden;
+            opacity: 0;
+            height: 0;
+            pointer-events: none;
+
+            &.active {
+                opacity: 1;
+                height: auto;
+                pointer-events: all;
+            }
+        }
+    }
+}

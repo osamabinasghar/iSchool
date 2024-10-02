@@ -1,0 +1,132 @@
+.ed-btn {
+    background-color: var(--ed-purple);
+    color: var(--white);
+    border-radius: 99px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    padding: 0 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: var(--ed-blue);
+    }
+}
+
+.ed-section-sub-title {
+    font-weight: 600;
+    color: var(--ed-purple);
+    text-transform: uppercase;
+    padding-right: 10px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 10px;
+        width: 48px;
+        background: linear-gradient(90deg,
+        #005280 3px,
+                rgba(255, 255, 255, 0) 3px,
+                rgba(255, 255, 255, 0) 8px,
+                #005280 8px,
+                #005280 13px,
+                rgba(255, 255, 255, 0) 13px,
+                rgba(255, 255, 255, 0) 18px,
+                rgba(255, 255, 255, 0) 18px,
+                #005280 0);
+    }
+
+    &--white {
+        color: var(--white);
+
+        &::before {
+            background: linear-gradient(90deg,
+                    rgba(255, 255, 255, 1) 3px,
+                    rgba(255, 255, 255, 0) 3px,
+                    rgba(255, 255, 255, 0) 8px,
+                    rgba(255, 255, 255, 1) 8px,
+                    rgba(255, 255, 255, 1) 13px,
+                    rgba(255, 255, 255, 0) 13px,
+                    rgba(255, 255, 255, 0) 18px,
+                    rgba(255, 255, 255, 0) 18px,
+                    rgba(255, 255, 255, 1) 0);
+        }
+    }
+}
+
+.ed-section-title {
+    font-weight: 600;
+    font-size: 45px;
+    color: var(--ed-blue);
+    text-transform: capitalize;
+    line-height: 1.29;
+
+    @include xxl {
+        font-size: 40px;
+    }
+
+    @include xl {
+        font-size: 35px;
+    }
+
+    @include lg {
+        font-size: 32px;
+    }
+
+    @include xs {
+        font-size: 28px;
+    }
+
+    @include xxs {
+        font-size: 25px;
+    }
+}
+
+// accodion
+.ed-single-accordion-item {
+    transition: 0.4s ease;
+}
+
+
+.ed-single-accordion-item.open {
+    .ed-single-accordion-item {
+        &__header i {
+            transform: rotate(90deg);
+            color: var(--ed-purple);
+        }
+
+        &__title {
+            color: var(--ed-purple);
+        }
+
+        &__body {
+            grid-template-rows: 1fr;
+            padding-top: 9px;
+        }
+    }
+}
+
+
+.ed-single-accordion-item__header i {
+    transition: transform 0.4s ease;
+}
+
+.ed-single-accordion-item__body {
+    transition: all 0.4s ease;
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+}
+
+.ed-single-accordion-item__body p {
+    overflow: hidden;
+}

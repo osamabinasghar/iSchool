@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iSchool</title>
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon">
+
+    <!-- plugins & libraries css -->
+    <link rel="stylesheet" href="assets/vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/vendor/font-awesome/all.min.css">
+
+    <!-- tailwind css -->
+    <link rel="stylesheet" href="src/output.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+</head>
+
+<body>
+    <div class="ed-overlay group">
+        <div class="fixed inset-0 z-[100] group-[.active]:bg-edblue/80 duration-[400ms] pointer-events-none group-[.active]:pointer-events-auto"></div>
+    </div>
+    <div class="ed-search group">
+        <form action="#" class="bg-white fixed z-[100] top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] h-[100px] md:h-[70px] xxs:h-[50px] w-[1224px] max-w-[95%] flex gap-[10px] rounded-full overflow-hidden px-[40px] xxs:px-[20px] pointer-events-none opacity-0 group-[.active]:pointer-events-auto group-[.active]:opacity-100 duration-[400ms]">
+            <input type="search" name="ed-search" placeholder="Search Here..." class="bg-transparent w-full focus:outline-none">
+            <button class="text-[25px] md:text-[22px] xxs:text-[20px]"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </div>
+    <div class="ed-sidebar">
+        <div class="translate-x-[100%] transition-transform ease-linear duration-300 fixed right-0 w-full max-w-[25%] xl:max-w-[30%] lg:max-w-[40%] md:max-w-[50%] sm:max-w-[60%] xxs:max-w-full bg-white h-full z-[100] overflow-auto">
+            <div class="ed-sidebar-heading p-[20px] lg:p-[20px] border-b border-edgray/20">
+                <div class="logo flex justify-between items-center">
+                    <a href="index.html"><img src="assets/img/logo.png" alt="logo"></a>
+
+                    <button type="button" class="ed-sidebar-close-btn border border-edgray/20 w-[45px] aspect-square shrink-0 text-black text-[22px] rounded-full hover:text-edpurple"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="ed-header-nav-in-mobile"></div>
+        </div>
+    </div>
+
+    <!-- HEADER SECTION START -->
+    <header class="absolute z-[99] top-0 inset-x-[100px] xxl:inset-x-[30px] xl:inset-x-0 bg-white rounded-bl-[10px] rounded-br-[10px]">
+        <!-- top header -->
+        <div class="bg-edblue flex items-center justify-between lg:justify-center lg:gap-x-[20px]">
+            <!-- contacts -->
+            <div class="flex items-center gap-x-[32px] xl:gap-x-[15px] gap-y-[6px] py-[18px] pl-[30px] xl:pl-[10px] lg:pl-0 lg:order-2 sm:pt-0 sm:pb-[10px] xl:hidden">
+                <!-- single contact -->
+                <a href="mailto:info@ischool.pk" class="flex items-center gap-x-[10px] font-light text-white/80">
+                    <span class="icon shrink-0 xl:hidden">
+                        <img src="assets/img/icon/mail.svg" alt="icon">
+                    </span>
+                    <span>info@ischool.pk</span>
+                </a>
+                <!-- single contact -->
+                <a href="tel:+923324666823" class="flex items-center gap-x-[10px] font-light text-white/80">
+                    <span class="icon shrink-0 xl:hidden">
+                        <img src="assets/img/icon/phone.svg" alt="icon">
+                    </span>
+                    <span>+92 332 466 6823</span>
+                </a>
+            </div>
+
+            <!-- actions -->
+            <div class="shrink-0 flex items-center gap-x-[30px] xl:gap-x-[15px] text-white lg:order-3 sm:hidden border-l">
+                <a href="https://innovadorsolutions.com/?fluent-form=7" class="ed-btn !h-[60px] !rounded-none sm:!px-[15px]" target="_blank">Request a Demo</a>
+            </div>
+        </div>
+
+        <!-- bottom header -->
+        <div class="px-[30px] xxl:px-[15px] lg:px-[20px] py-[28px] lg:py-[18px] flex justify-between to-be-fixed">
+            <div class="logo xxs:max-w-[40%]"><a href="index.html"><img src="assets/img/logo.png" alt="logo" class="logo"></a></div>
+
+            <div class="flex lg:items-center lg:gap-[60px] xxs:gap-[30px]">
+                <div class="flex items-center gap-[100px] xl:gap-[30px] lg:gap-y-0">
+                    <!-- nav -->
+                    <div class="ed-header-nav-container">
+                        <ul class="to-go-to-sidebar-in-mobile ed-header-nav flex lg:flex-col gap-x-[43px] xl:gap-x-[33px] font-kanit text-[17px] font-normal">
+                            <li class="has-sub-menu relative scroll"><a role="button" href="#about">Welcome</a></li>
+                            <li><a href="#why">Why</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#modules">Modules</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- mobile menu button -->
+                <button type="button" class="ed-mobile-menu-open-btn hidden lg:inline-block text-edblue text-[18px]"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main>
+        <!-- BANNER SECTION START -->
+        <section>
+            <div class="ed-banner-slider swiper relative">
+                <div class="swiper-wrapper">
+                    <!-- single slide -->
+                    <div class="swiper-slide">
+                        <div class="pt-[390px] md:pt-[300px] xs:pt-[280px] pb-[205px] bg-[url('../assets/img/banner-bg-1.jpg')] bg-no-repeat bg-center bg-cover relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none">
+                            <div class="mx-[10%] md:mx-[15px]">
+                                <div class="text-white w-[48%] xl:w-[60%] md:w-[70%] sm:w-[80%] xs:w-full">
+                                    <h6 class="font-medium uppercase tracking-[3px] mb-[16px]">Welcome to <span class="text-edyellow">iSchool</span></h6>
+                                    <h2 class="font-bold text-[clamp(35px,4.57vw,80px)] leading-[1.13] mb-[15px]">Revolutionize School Management</h2>
+                                    <p class="leading-[1.75] mb-[41px]">Experience the power of state-of-the-art software designed specifically for efficient School management. This advanced system offers unparalleled control, making it effortless to oversee and regulate all aspects of your School according to your unique requirements.</p>
+                                    <div style="display: flex; gap: 10px;">
+                                        <a href="https://play.google.com/store/apps/details?id=com.ischool.pk&hl=en_US" target="_blank"><img src="assets/img/google-play.svg" width="200" alt="google-play"></a>
+                                        <a href="https://apps.apple.com/pk/app/i-school/id6450982421" target="_blank"><img src="assets/img/app-store.svg" width="200" alt="app-store"></a>
+                                    </div>
+                                    <div class="flex items-center gap-[20px]">
+
+                                        <!-- <a href="contact.html" class="ed-btn">Apply now</a>
+                                        <a href="about.html" class="ed-btn !bg-transparent border border-white hover:!bg-white hover:text-edpurple">About us</a> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- single slide -->
+                    <!-- <div class="swiper-slide">
+                        <div class="pt-[390px] md:pt-[300px] xs:pt-[280px] pb-[205px] bg-[url('../assets/img/banner-bg-1.jpg')] bg-no-repeat bg-center bg-cover relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-edblue/70 before:pointer-events-none">
+                            <div class="mx-[10%] md:mx-[15px]">
+                                <div class="text-white w-[48%] xl:w-[60%] md:w-[70%] sm:w-[80%] xs:w-full">
+                                    <h6 class="font-medium uppercase tracking-[3px] mb-[16px]">Welcome to <span class="text-edyellow">iSchool</span></h6>
+                                    <h2 class="font-bold text-[clamp(35px,4.57vw,80px)] leading-[1.13] mb-[15px]">Revolutionize School Management</h2>
+                                    <p class="leading-[1.75] mb-[41px]">Experience the power of state-of-the-art software designed specifically for efficient School management. This advanced system offers unparalleled control, making it effortless to oversee and regulate all aspects of your School according to your unique requirements.</p>
+                                    <div class="flex items-center gap-[20px]">
+                                        <a href="#" class="ed-btn">Apply now</a>
+                                        <a href="#" class="ed-btn !bg-transparent border border-white hover:!bg-white hover:text-edpurple">About us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <!-- nav -->
+                <!-- <div class="ed-banner-slider-nav absolute z-[1] top-[50%] xs:top-[80%] right-[130px] md:right-[60px] sm:right-[40px] xs:hidden flex flex-col gap-[15px] *:w-[40px] *:h-[40px] *:rounded-full *:border *:border-white/20 *:text-white *:text-[18px]">
+                    <button class="prev hover:bg-edyellow hover:border-edyellow hover:text-black"><i class="fa-solid fa-angle-up"></i></button>
+                    <button class="next leading-[43px] hover:bg-edyellow hover:border-edyellow hover:text-black"><i class="fa-solid fa-angle-down"></i></button>
+                </div> -->
+            </div>
+        </section>
+        <!-- BANNER SECTION END -->
+
+        <!-- FEATURES SECTION START -->
+        <section class="-mt-[70px] relative z-[2]">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="grid grid-cols-4 md:grid-cols-2 xs:grid-cols-1 gap-[30px]">
+                    <!-- single feature -->
+                    <div class="bg-[#FAF9F6] hover:bg-edyellow border-t-[7px] border-edyellow hover:border-edpurple duration-[400ms] p-[30px] sm:p-[25px] group relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-[url('../assets/img/faeture-bg.jpg')] before:mix-blend-hard-light before:opacity-0 before:duration-[400ms] hover:before:opacity-15">
+                        <span class="icon">
+                            <img src="assets/img/feature-1.png" width="64" height="64" alt="feature" class="mb-[11px]">
+                        </span>
+                        <h4 class="font-semibold text-[18px] xl:text-[18px] mb-[3px] text-edblue"><a href="#" class="hover:text-edpurple">Academics & Learning</a></h4>
+                        <p class="text-edgray2 group-hover:text-black mb-[12px]">Learning Management System</p>
+                    </div>
+
+                    <!-- single feature -->
+                    <div class="bg-[#FAF9F6] hover:bg-edyellow border-t-[7px] border-edyellow hover:border-edpurple duration-[400ms] p-[30px] sm:p-[25px] group relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-[url('../assets/img/faeture-bg.jpg')] before:mix-blend-hard-light before:opacity-0 before:duration-[400ms] hover:before:opacity-15">
+                        <span class="icon">
+                            <img src="assets/img/feature-2.png" width="64" height="64" alt="feature" class="mb-[11px]">
+                        </span>
+                        <h4 class="font-semibold text-[18px] xl:text-[18px] mb-[3px] text-edblue"><a href="#" class="hover:text-edpurple">Communication </a></h4>
+                        <p class="text-edgray2 group-hover:text-black mb-[12px]">Attendance Management System</p>
+                    </div>
+
+                    <!-- single feature -->
+                    <div class="bg-[#FAF9F6] hover:bg-edyellow border-t-[7px] border-edyellow hover:border-edpurple duration-[400ms] p-[30px] sm:p-[25px] group relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-[url('../assets/img/faeture-bg.jpg')] before:mix-blend-hard-light before:opacity-0 before:duration-[400ms] hover:before:opacity-15">
+                        <span class="icon">
+                            <img src="assets/img/feature-3.png" width="64" height="64" alt="feature" class="mb-[11px]">
+                        </span>
+                        <h4 class="font-semibold text-[18px] xl:text-[18px] mb-[3px] text-edblue"><a href="#" class="hover:text-edpurple">Administration</a></h4>
+                        <p class="text-edgray2 group-hover:text-black mb-[12px]">Profile Management System</p>
+                    </div>
+
+                    <!-- single feature -->
+                    <div class="bg-[#FAF9F6] hover:bg-edyellow border-t-[7px] border-edyellow hover:border-edpurple duration-[400ms] p-[30px] sm:p-[25px] group relative z-[1] before:absolute before:-z-[1] before:inset-0 before:bg-[url('../assets/img/faeture-bg.jpg')] before:mix-blend-hard-light before:opacity-0 before:duration-[400ms] hover:before:opacity-15">
+                        <span class="icon">
+                            <img src="assets/img/feature-4.png" width="64" height="64" alt="feature" class="mb-[11px]">
+                        </span>
+                        <h4 class="font-semibold text-[18px] xl:text-[18px] mb-[3px] text-edblue"><a href="#" class="hover:text-edpurple">Fee Management</a></h4>
+                        <p class="text-edgray2 group-hover:text-black mb-[12px]">Generate Report</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FEATURES SECTION END -->
+
+        <!-- ABOUT SECTION START -->
+        <section class="py-[120px] xl:py-[80px] md:py-[60px]" id="about">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex md:flex-col justify-between items-center gap-x-[60px] xl:gap-x-[40px] gap-y-[40px]">
+                    <!-- img -->
+                    <div class="max-w-[50%] md:max-w-full grow relative">
+                        <img src="assets/img/about-img.png" alt="about image">
+                    </div>
+
+                    <!-- txt -->
+                    <div class="max-w-[50%] md:max-w-full shrink-0 grow">
+                        <h6 class="ed-section-sub-title">about us</h6>
+                        <h2 class="ed-section-title mb-[9px]">Welcome to iSchool</h2>
+                        <p class="text-edgray">iSchool Mobile App enables management & teachers to update important & urgent information or announcement at anytime while, students & parents get the notifications, & they can also keep track of progress etc.</p>
+                        
+                            <div class="flex items-center lg:flex-col lg:items-start md:flex-row md:items-center gap-[20px] xl:gap-[15px]">
+                                <div>
+                                    <p class="text-edgrey">Don't miss the opportunity to revolutionize your school's management! Experience  the power of iSchool today & discover a world of simplicity, efficiency, & enhanced communication within your educational institution.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
+        <!-- ADMISSION PROCESS SECTION START -->
+        <section class="py-[120px] xl:py-[80px] md:py-[60px] bg-[#FAF9F6] relative z-[1]" id="why">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex flex-col gap-x-[85px] items-start relative">
+                    <!-- heading -->
+                    <div class="relative w-full before:absolute before:bottom-0 before:mb-[8%] before:left-0 before:bg-[url('../assets/img/admission-title-vector.svg')] before:bg-no-repeat before:bg-[length:100%_100%] before:w-[100%] before:h-[88px] before:pointer-events-none lg:before:hidden">
+                        <div class="shrink-0 max-w-[290px]">
+                            <h6 class="ed-section-sub-title">Why</h6>
+                            <h2 class="ed-section-title !text-[30px] pb-[42px] lg:pb-0 mb-[40px] lg:mb-[20px]">iSchool</h2>
+                            <br>
+                            <!-- <a href="" class="ed-btnwhite">Admission Now</a> -->
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <!-- cards -->
+                    <div class="grid grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[24px] -mt-[140px] lg:mt-[25px] ml-auto lg:w-[100%]">
+                        <!-- single process -->
+                        <div class="bg-white rounded-[10px] p-[24px] shadow-[0_4px_50px_rgba(0,0,0,0.09)] w-[22%]">
+                            <span class="icon block mb-[13px]">
+                                <img src="assets/img/01.svg" width="64" alt="Scalability" class="mb-[11px]">
+                            </span>
+                            <h4 class="font-semibold text-[28px] mb-[5px] text-edblue"><a href="#" class="hover:text-edpurple">Simplicity</a></h4>
+                            <p class="text-edgray2 group-hover:text-black mb-[18px]">iSchool's intuitive interface ensures easy navigation for all users, regardless of technical expertise.</p>
+                        </div>
+
+                        <!-- single process -->
+                        <div class="bg-white rounded-[10px] p-[24px] shadow-[0_4px_50px_rgba(0,0,0,0.09)]">
+                            <span class="icon block mb-[13px]">
+                                <img src="assets/img/02.svg" width="64" alt="admission process" class="mb-[11px]">
+                            </span>
+                            <h4 class="font-semibold text-[28px] mb-[5px] text-edblue"><a href="#" class="hover:text-edpurple">Reliability</a></h4>
+                            <p class="text-edgray2 group-hover:text-black mb-[18px]">iSchool's cutting-edge technology ensures seamless performance, data security, and regular updates for reliability.</p>
+                        </div>
+
+                        <!-- single process -->
+                        <div class="bg-white rounded-[10px] p-[24px] shadow-[0_4px_50px_rgba(0,0,0,0.09)]">
+                            <span class="icon block mb-[13px]">
+                                <img src="assets/img/03.svg" width="64" alt="admission process" class="mb-[11px]">
+                            </span>
+                            <h4 class="font-semibold text-[28px] mb-[5px] text-edblue"><a href="#" class="hover:text-edpurple">Scalability</a></h4>
+                            <p class="text-edgray2 group-hover:text-black mb-[18px]">iSchool's scalable cloud model efficiently manages data growth, ensuring seamless performance and adaptability. </p>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- cards -->
+                    <div class="grid grid-cols-3 sm:grid-cols-2 xxs:grid-cols-1 gap-[24px] -mt-[164px] lg:mt-[25px] ml-auto lg:w-[100%]">
+                        <!-- single process -->
+                        <div class="bg-white rounded-[10px] p-[24px] shadow-[0_4px_50px_rgba(0,0,0,0.09)]">
+                            <span class="icon block mb-[13px]">
+                                <img src="assets/img/04.svg" width="64" alt="admission process" class="mb-[11px]">
+                            </span>
+                            <h4 class="font-semibold text-[28px] mb-[5px] text-edblue"><a href="#" class="hover:text-edpurple">Affordability</a></h4>
+                            <p class="text-edgray2 group-hover:text-black mb-[18px]">iSchool's modular design offers cost-effective solutions, allowing schools to choose needed features.</p>
+                        </div>
+
+                        <!-- single process -->
+                        <div class="bg-white rounded-[10px] p-[24px] shadow-[0_4px_50px_rgba(0,0,0,0.09)]">
+                            <span class="icon block mb-[13px]">
+                                <img src="assets/img/05.svg" width="64" alt="admission process" class="mb-[11px]">
+                            </span>
+                            <h4 class="font-semibold text-[28px] mb-[5px] text-edblue"><a href="#" class="hover:text-edpurple">Go Green with Paperless environment</a></h4>
+                            <p class="text-edgray2 group-hover:text-black mb-[18px]">iSchool leads with full automation, enabling paperless school administration for efficiency.</p>
+                        </div>
+
+                        <!-- single process -->
+                        <div class="bg-white rounded-[10px] p-[24px] shadow-[0_4px_50px_rgba(0,0,0,0.09)]">
+                            <span class="icon block mb-[13px]">
+                                <img src="assets/img/06.svg" width="64" alt="admission process" class="mb-[11px]">
+                            </span>
+                            <h4 class="font-semibold text-[28px] mb-[5px] text-edblue"><a href="#" class="hover:text-edpurple">Reduces Teacher's Workload</a></h4>
+                            <p class="text-edgray2 group-hover:text-black mb-[18px]">iSchool enhances efficiency, allowing teachers to complete complex tasks with simple clicks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- vectors -->
+            <div>
+                <img src="assets/img/admission-vector-1.svg" alt="vector" class="absolute -z-[1] top-[156px] left-0">
+                <img src="assets/img/admission-vector-2.svg" alt="vector" class="absolute -z-[1] bottom-[130px] right-[80px]">
+            </div>
+        </section>
+        <!-- ADMISSION PROCESS SECTION END -->
+
+        <!-- FORM & NOTICE SECTION START -->
+        <section class="py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] overflow-hidden" id="features">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex lg:flex-col rounded-[20px] overflow-hidden bg-[#f5f4fe]">
+                    <!-- form -->
+                    <div class="grow max-w-[49%] lg:max-w-full">
+                        <!-- heading -->
+                        <div class="bg-edpurple p-[22px] pl-[170px] xxl:pl-[130px] xs:pl-[40px] xxs:pl-[22px]">
+                            <h6 class="ed-section-sub-title ed-section-sub-title--white">About</h6>
+                            <h3 class="font-semibold text-[30px] xxs:text-[25px] text-white">App Overview</h3>
+                        </div>
+
+                        <!-- main content -->
+                        <div class="p-[40px] pr-0 lg:pr-[40px]" style="margin-top: 35px;">
+                            <img src="assets/img/form-img.png" alt="form image" class="mx-auto drop-shadow-[0_4px_30px_rgba(0,0,0,0.1)] mb-[17px]">
+                            <h3 class="text-[28px] text-edblue">Simplifying School Management with User-Friendly Software.</h3>
+                            <p class="text-edblue mb-[20px]">iSchool is a groundbreaking software solution that revolutionizes the way you monitor and control your iSchool operations. With its intuitive interface and powerful features, iSchool provides a seamless experience for effortlessly managing your entire School business.</p>
+                            <!-- <div style="display: flex; gap: 10px;">
+                                <a href="https://play.google.com/store/apps/details?id=com.ischool.pk&hl=en_US" target="_blank"><img src="assets/img/google-play.svg" width="200" alt="google-play"></a>
+                                <a href="https://apps.apple.com/pk/app/i-school/id6450982421" target="_blank"><img src="assets/img/app-store.svg" width="200" alt="app-store"></a>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <!-- notice -->
+                    <div class="grow max-w-[51%] lg:max-w-full">
+                        <!-- heading -->
+                        <div class="bg-edpurple p-[22px] pl-[170px] xxl:pl-[130px] xs:pl-[40px] xxs:pl-[22px]">
+                            <h6 class="ed-section-sub-title ed-section-sub-title--white">Features</h6>
+                            <h3 class="font-semibold text-[30px] xxs:text-[25px] text-white">Key Specifications</h3>
+                        </div>
+
+                        <!-- main content -->
+                        <div class="p-[40px] xl:px-[25px] lg:pl-[70px] sm:pl-[50px] xxs:p-[15px] space-y-[22px]">
+                            <!-- Admin notice -->
+                            <div class="flex gap-x-[20px] items-center relative before:absolute before:h-[1px] before:w-[40px] xl:before:w-[30px] before:bg-edpurple before:right-[100%] before:top-[50%] before:-translate-y-[50%] xxs:before:content-none after:absolute after:w-[1px] after:h-[114%] after:bg-edpurple after:bottom-[50%] after:right-[calc(100%+40px)] xl:after:right-[calc(100%+30px)] xxs:after:content-none first:after:content-none">
+                                <div class="xxs:hidden icon shrink-0 p-[14px] bg-white border border-[#d9d9d9] rounded-[10px] w-[110px] xl:w-[90px] aspect-square flex items-center justify-center">
+                                    <img src="assets/img/notice-icon-1.png" alt="icon">
+                                </div>
+
+                                <div class="pb-[26px] md:pb-[16px] border-b border-[#D9D9D9]" style="width: 100%;">
+                                    <h5 class="font-semibold text-[20px] text-edblue mb-[6px]"><a href="#" class="hover:text-edpurple">Administration & Management</a></h5>
+                                    <ul>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Campus Management</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Fee Management</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Attendance Management</span>
+                                        </li>
+                                        <li class="hover:text-edpurple" style="cursor: pointer; border: 1px solid; border-radius: 10px; text-align: center; margin-top: 5px; width:125px;"><a id="btnAdmin">View More</a></li>
+                                    </ul>
+                                    <!-- The Modal -->
+                                    <div id="adminModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content" style="height: 640px;">
+                                            <div class="modal-header">
+                                                <span class="closeAdmin">&times;</span>
+                                                <center><h2>Administration & Management</h2></center>
+                                            </div>
+                                            <div class="p-4">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <!-- Image Column -->
+                                                    <div class="flex items-center justify-center">
+                                                        <img src="assets/img/admin.jpg" alt="Administration" class="w-full h-auto">
+                                                    </div>
+                                                    <!-- List Column -->
+                                                    <div class="pl-5" style="line-height: 35px; margin-left: 35px; margin-top: 25px;">
+                                                        <ul class="list-disc space-y-2">
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Campus Management</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Manage Student & Alumni</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Manage Teacher & Staff Profile</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Manage Parents' Profile</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Admissions</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Fee Management</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Announcement & Newsletter</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Communication by SMS & Email</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Manage Events & Birthday Updates</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Health Record Management System</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Attendance System</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Library Management</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Data Import & Export</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Integrated with Google Meet & Drive</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Teachers notice -->
+                            <div class="flex gap-x-[20px] items-center relative before:absolute before:h-[1px] before:w-[40px] xl:before:w-[30px] before:bg-edpurple before:right-[100%] before:top-[50%] before:-translate-y-[50%] xxs:before:content-none after:absolute after:w-[1px] after:h-[114%] after:bg-edpurple after:bottom-[50%] after:right-[calc(100%+40px)] xl:after:right-[calc(100%+30px)] xxs:after:content-none first:after:content-none">
+                                <div class="xxs:hidden icon shrink-0 p-[14px] bg-white border border-[#d9d9d9] rounded-[10px] w-[110px] xl:w-[90px] aspect-square flex items-center justify-center">
+                                    <img src="assets/img/notice-icon-2.png" alt="icon">
+                                </div>
+
+                                <div class="pb-[26px] md:pb-[16px] border-b border-[#D9D9D9]" style="width: 100%;">
+                                    <h5 class="font-semibold text-[20px] text-edblue mb-[6px]"><a href="#" class="hover:text-edpurple">Teachers</a></h5>
+                                    <ul>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Classes Schedule</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Academic Reports</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Skill Assessment</span>
+                                        </li>
+                                        <li class="hover:text-edpurple" style="cursor: pointer; border: 1px solid; border-radius: 10px; text-align: center; margin-top: 5px; width:125px;"><a id="btnTeacher">View More</a></li>
+                                    </ul>
+                                    <!-- The Modal -->
+                                    <div id="teacherModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content" style="height: 640px;">
+                                            <div class="modal-header">
+                                                <span class="closeTeacher">&times;</span>
+                                                <center><h2>Teachers</h2></center>
+                                            </div>
+                                            <div class="p-4">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <!-- Image Column -->
+                                                    <div class="flex items-center justify-center">
+                                                        <img src="assets/img/Teachers.jpg" alt="Teachers" class="w-full h-auto">
+                                                    </div>
+                                                    <!-- List Column -->
+                                                    <div class="pl-5" style="line-height: 35px; margin-left: 35px; margin-top: 25px;">
+                                                        <ul class="list-disc space-y-2">
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Manage Classes & Subjects</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Students' online Attendance</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Homework & Assignments</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Class Announcements</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Classes Schedule</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Events & Birthday Updates</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Behavior & Discipline</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Examination Management</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Grading & Assignments</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Transcript & Progress Reports</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Academic Reports</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Integrated with Google Meet & Drive</span>
+                                                            </li>
+                                                                                <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Learning Management System</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Students notice -->
+                            <div class="flex gap-x-[20px] items-center relative before:absolute before:h-[1px] before:w-[40px] xl:before:w-[30px] before:bg-edpurple before:right-[100%] before:top-[50%] before:-translate-y-[50%] xxs:before:content-none after:absolute after:w-[1px] after:h-[114%] after:bg-edpurple after:bottom-[50%] after:right-[calc(100%+40px)] xl:after:right-[calc(100%+30px)] xxs:after:content-none first:after:content-none">
+                                <div class="xxs:hidden icon shrink-0 p-[14px] bg-white border border-[#d9d9d9] rounded-[10px] w-[110px] xl:w-[90px] aspect-square flex items-center justify-center">
+                                    <img src="assets/img/notice-icon-3.png" alt="icon">
+                                </div>
+
+                                <div class="pb-[26px] md:pb-[16px] border-b border-[#D9D9D9]" style="width: 100%;">
+                                    <h5 class="font-semibold text-[20px] text-edblue mb-[6px]"><a href="#" class="hover:text-edpurple">Students</a></h5>
+                                    <ul>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Attendance Record</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Academic Reports</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Progress Report</span>
+                                        </li>
+                                        <li class="hover:text-edpurple" style="cursor: pointer; border: 1px solid; border-radius: 10px; text-align: center; margin-top: 5px; width:125px;"><a id="btnStudent">View More</a></li>
+                                    </ul>
+                                    <!-- The Modal -->
+                                    <div id="studentModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content" style="height: 640px;">
+                                            <div class="modal-header">
+                                                <span class="closeStudent">&times;</span>
+                                                <center><h2>Students</h2></center>
+                                            </div>
+                                            <div class="p-4">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <!-- Image Column -->
+                                                    <div class="flex items-center justify-center">
+                                                        <img src="assets/img/Students.jpg" alt="Teachers" class="w-full h-auto">
+                                                    </div>
+                                                    <!-- List Column -->
+                                                    <div class="pl-5" style="line-height: 35px; margin-left: 35px; margin-top: 75px;">
+                                                        <ul class="list-disc space-y-2">
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Gradebook</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Interactive Assignments</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Access to Classes Scheule & Subject</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Attendance Record</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Announcement & Notifications</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Academic Reports</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Progress Report</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Events & Birthday Updates</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Integrated with Google Meet & Drive</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Parents notice -->
+                            <div class="flex gap-x-[20px] items-center relative before:absolute before:h-[1px] before:w-[40px] xl:before:w-[30px] before:bg-edpurple before:right-[100%] before:top-[50%] before:-translate-y-[50%] xxs:before:content-none after:absolute after:w-[1px] after:h-[114%] after:bg-edpurple after:bottom-[50%] after:right-[calc(100%+40px)] xl:after:right-[calc(100%+30px)] xxs:after:content-none first:after:content-none">
+                                <div class="xxs:hidden icon shrink-0 p-[14px] bg-white border border-[#d9d9d9] rounded-[10px] w-[110px] xl:w-[90px] aspect-square flex items-center justify-center">
+                                    <img src="assets/img/notice-icon-4.png" alt="icon">
+                                </div>
+
+                                <div class="pb-[26px] md:pb-[16px] border-b border-[#D9D9D9]" style="width: 100%;">
+                                    <h5 class="font-semibold text-[20px] text-edblue mb-[6px]"><a href="#" class="hover:text-edpurple">Parents</a></h5>
+                                    <ul>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Attendance Record</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Academic Reports</span>
+                                        </li>
+                                        <li class="flex items-center">
+                                            <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                            <span>Progress Report</span>
+                                        </li>
+                                        <li class="hover:text-edpurple" style="cursor: pointer; border: 1px solid; border-radius: 10px; text-align: center; margin-top: 5px; width:125px;"><a id="btnParent">View More</a></li>
+                                    </ul>
+                                    <!-- The Modal -->
+                                    <div id="parentModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content" style="height: 640px;">
+                                            <div class="modal-header">
+                                                <span class="closeParent">&times;</span>
+                                                <center><h2>Parents</h2></center>
+                                            </div>
+                                            <div class="p-4">
+                                                <div class="grid grid-cols-2 gap-4">
+                                                    <!-- Image Column -->
+                                                    <div class="flex items-center justify-center">
+                                                        <img src="assets/img/Parents.jpg" alt="Teachers" class="w-full h-auto">
+                                                    </div>
+                                                    <!-- List Column -->
+                                                    <div class="pl-5" style="line-height: 35px; margin-left: 35px; margin-top: 75px;">
+                                                        <ul class="list-disc space-y-2">
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Grade Book</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Interactive Assignments</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Access to Classes Schedules & Subject</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>School Attendance</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Progress Report</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Announcement & Notifications</span>
+                                                            </li>
+                                                            <li class="flex items-center">
+                                                                <img src="assets/img/pin.png" width="20" alt="Pin Icon" class="mr-2">
+                                                                <span>Academic Reports</span>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- vectors -->
+            <div>
+                <img src="assets/img/form-notice-vector-1.svg" alt="vector" class="absolute -z-[1] bottom-[296px] left-0">
+                <img src="assets/img/form-notice-vector-2.svg" alt="vector" class="absolute -z-[1] bottom-[192px] right-[90px]">
+            </div>
+        </section>
+        <!-- FORM & NOTICE SECTION END -->
+
+        <!-- CTA SECTION START -->
+        <section class="bg-edpurple relative z-[1] overflow-hidden">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex md:flex-col items-center gap-[60px] lg:gap-[40px] md:gap-y-[20px]">
+                    <div class="grow md:pt-[60px]">
+                        <!-- <h6 class="ed-section-sub-title ed-section-sub-title--white">ARE YOU READY FOR THIS OFFER</h6> -->
+                        <h2 class="ed-section-title !text-white mb-[36px]">Download iSchool <br/> 
+                            <span class="font-normal text-[40px] xxl:text-[35px] xl:text-[30px] xs:text-[28px] xxs:text-[25px]">Simplify, Learn, Grow!</span>
+                        </h2>
+                        <div style="display: flex; gap: 10px;">
+                            <a href="https://play.google.com/store/apps/details?id=com.ischool.pk&hl=en_US" target="_blank"><img src="assets/img/google-play.svg" width="200" alt="google-play"></a>
+                            <a href="https://apps.apple.com/pk/app/i-school/id6450982421" target="_blank"><img src="assets/img/app-store.svg" width="200" alt="app-store"></a>
+                        </div>
+                        <!-- <div class="flex flex-wrap gap-[16px]">
+                            <a href="#" class="ed-btn !bg-edyellow !text-black hover:!bg-edblue hover:!text-white">Become a student</a>
+                            <a href="#" class="ed-btn !bg-transparent !text-white border border-white hover:!bg-white hover:!text-edblue">Become a teacher</a>
+                        </div> -->
+                    </div>
+
+                    <!-- image -->
+                    <div class="shrink-0 relative z-[1] pr-[40px] lg:pr-0">
+                        <img src="assets/img/cta-img.png" alt="image">
+                        <img src="assets/img/cta-img-vector.svg" alt="vector" class="absolute right-[0] lg:right-[-40px] top-[20px] -z-[1] max-w-[460px]">
+                    </div>
+                </div>
+            </div>
+
+            <!-- vector -->
+            <div>
+                <img src="assets/img/cta-vector-1.png" alt="vector" class="absolute -z-[1] bottom-0 left-0 pointer-events-none">
+                <img src="assets/img/cta-vector-2.png" alt="vector" class="absolute -z-[1] top-0 right-0 pointer-events-none">
+            </div>
+        </section>
+        <!-- CTA SECTION END -->
+
+        <!-- SERVICES SECTION START -->
+        <section class="py-[120px] xl:py-[80px] md:py-[60px] relative z-[1] overflow-hidden" id="modules">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex md:flex-col gap-[45px] items-center">
+                    <div>
+                        <h6 class="ed-section-sub-title">Modules</h6>
+                        <h2 class="ed-section-title mb-[19px]">Empower Your Experience: Discover iSchool Modules</h2>
+                        <p class="mb-[31px]">Explore the full potential of iSchool with a suite of dynamic modules designed to enhance your experience and streamline your workflow:</p>
+
+                        <div class="flex flex-wrap gap-x-[24px] gap-y-[15px]">
+                            <a href="https://innovadorsolutions.com/?fluent-form=7" class="ed-btn" target="_blank">Request a Demo</a>
+                            <div class="flex items-center gap-[16px]">
+                                <span class="icon bg-edyellow w-[44px] aspect-square rounded-full outline-[1px] outline outline-edyellow outline-offset-[2px] flex items-center justify-center">
+                                    <img src="assets/img/icon/phone.svg" alt="call icon" class="w-[22px]">
+                                </span>
+
+                                <span class="txt font-semibold text-etBlack">
+                                    <span class="block text-[16px] font-medium text-edgray mb-[2px] opacity-80">Call Us Now</span>
+                                    <a href="tel:+92 332 466 6823" class="font-semibold text-[18px] hover:text-edyellow">+92 332 466 6823</a>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-[30px] max-w-[50%] md:max-w-full shrink-0 grow">
+                        <!-- single service -->
+                        <div class="flex xxs:flex-col items-center xxs:items-start gap-x-[20px] gap-y-[15px] odd:ml-[86px] lg:odd:ml-[56px] xxs:odd:ml-[26px]">
+                            <!-- icon -->
+                            <span class="shrink-0 w-[90px] aspect-square rounded-[8px] bg-edpurple/15 flex items-center justify-center">
+                                <img src="assets/img/LMS.svg" width="64" alt="icon">
+                            </span>
+
+                            <div>
+                                <h6 class="font-semibold text-[18px] text-edblue mb-[5px]">Learning Hub</h6>
+                                <p class="text-edgray">Dive into a comprehensive platform for managing and delivering educational content. From creating engaging courses to tracking progress and performance, our Learning Hub makes it easy to facilitate effective learning.</p>
+                            </div>
+                        </div>
+
+                        <!-- single service -->
+                        <div class="flex xxs:flex-col items-center xxs:items-start gap-x-[20px] gap-y-[15px] odd:ml-[86px] lg:odd:ml-[56px] xxs:odd:ml-[26px]">
+                            <!-- icon -->
+                            <span class="shrink-0 w-[90px] aspect-square rounded-[8px] bg-edpurple/15 flex items-center justify-center">
+                                <img src="assets/img/AMS.svg" width="64" alt="icon">
+                            </span>
+
+                            <div>
+                                <h6 class="font-semibold text-[18px] text-edblue mb-[5px]">Attendance Tracker</h6>
+                                <p class="text-edgray">Simplify the process of monitoring attendance with our intuitive system. Keep tabs on participation, generate detailed reports, and ensure accurate record-keeping with minimal effort.</p>
+                            </div>
+                        </div>
+
+                        <!-- single service -->
+                        <div class="flex xxs:flex-col items-center xxs:items-start gap-x-[20px] gap-y-[15px] odd:ml-[86px] lg:odd:ml-[56px] xxs:odd:ml-[26px]">
+                            <!-- icon -->
+                            <span class="shrink-0 w-[90px] aspect-square rounded-[8px] bg-edpurple/15 flex items-center justify-center">
+                                <img src="assets/img/PMS.svg" width="64" alt="icon">
+                            </span>
+
+                            <div>
+                                <h6 class="font-semibold text-[18px] text-edblue mb-[5px]">Profile Central</h6>
+                                <p class="text-edgray">Take control of user profiles with a robust management system. Effortlessly update and maintain personal information, preferences, and access settings, all in one central location.</p>
+                            </div>
+                        </div>
+
+                        <!-- single service -->
+                        <div class="flex xxs:flex-col items-center xxs:items-start gap-x-[20px] gap-y-[15px] odd:ml-[86px] lg:odd:ml-[56px] xxs:odd:ml-[26px]">
+                            <!-- icon -->
+                            <span class="shrink-0 w-[90px] aspect-square rounded-[8px] bg-edpurple/15 flex items-center justify-center">
+                                <img src="assets/img/GR.svg" width="64" alt="icon">
+                            </span>
+
+                            <div>
+                                <h6 class="font-semibold text-[18px] text-edblue mb-[5px]">Insightful Reports</h6>
+                                <p class="text-edgray">Unlock the power of data with our advanced reporting tools. Generate customized reports that provide actionable insights and help you make informed decisions based on comprehensive analytics.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- vectors -->
+            <div class="xxl:hidden">
+                <img src="assets/img/service-vector-1.svg" alt="vector" class="absolute -z-[1] bottom-[140px] left-[45px]">
+                <img src="assets/img/form-notice-vector-1.svg" alt="vector" class="absolute -z-[1] top-[140px] right-[40px]">
+            </div>
+        </section>
+        <!-- SERVICES SECTION END -->
+
+        <!-- GALLERY SECTION START -->
+        <div class="overflow-hidden">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <h5 class="font-semibold text-[24px] text-edblue text-center mb-[40px] relative z-[1] before:absolute before:-z-[1] before:w-[0%] before:h-[1px] before:left-0 before:top-[50%] before:bg-[#D9D9D9] before:-translate-y-[50%]"><span class="bg-white px-[20px]">App Visuals</span></h5>
+
+                <!-- gallery slider -->
+                <div class="ed-gallery-slider swiper overflow-visible">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-1.png" alt="Screen 1"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-2.png" alt="Screen 2"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-3.png" alt="Screen 3"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-4.png" alt="Screen 4"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-5.png" alt="Screen 5"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-6.png" alt="Screen 6"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-1.png" alt="Screen 1"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-2.png" alt="Screen 2"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-3.png" alt="Screen 3"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-4.png" alt="Screen 4"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-5.png" alt="Screen 5"></a>
+                        </div>
+                        <div class="swiper-slide max-w-max">
+                            <a href="" data-fslightbox="gallery" class="block rounded-[40px] overflow-hidden"><img src="assets/img/Screens-6.png" alt="Screen 6"></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- GALLERY SECTION END -->
+
+        <!-- TESTIMONIAL SECTION START -->
+        <!-- <section class="py-[120px] xl:py-[80px] md:py-[60px]">
+            <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+                <div class="flex md:flex-col items-start gap-y-[40px]"> -->
+                    <!-- testimonial -->
+                    <!-- <div class="max-w-[50%] md:max-w-full"> -->
+                        <!-- heading -->
+                        <!-- <div class="pb-[40px] sm:pb-[20px] bg-[url('../assets/img/testimonial-heading-vector.svg')] bg-no-repeat bg-left-bottom bg-[length:1000px] mb-[40px]  md:bg-none md:mb-0">
+                            <h6 class="ed-section-sub-title">Testimonials</h6>
+                            <h2 class="ed-section-title !text-[30px]">Students Feedback</h2>
+                        </div> -->
+
+                        <!-- <div class="flex xxs:flex-col gap-[15px] items-center relative pr-[35px]">
+                            <div class="ed-testimonial-slider swiper max-w-full">
+                                <div class="swiper-wrapper">
+                                    single testimony -->
+                                    <!-- <div class="swiper-slide">
+                                        <div>
+                                            <div class="inline-flex gap-[6px] text-[14px] mb-[20px]">
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#BCBCBC]"><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <p class="text-edgray mb-[24px]">Nullam dignissim ante scelerisque the is euismod fermentum odio sem semper the is erat a feugiat leo urna eget eros. Duis Aenean a imperdiet risus. Aliquam pellentesque.</p>
+                                            <div>
+                                                <h6 class="font-semibold text-[18px] text-edblue mb-[4px]">Ronald Richards</h6>
+                                                <span class="text-edgray">Co, Founder</span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- single testimony -->
+                                    <!-- <div class="swiper-slide">
+                                        <div>
+                                            <div class="inline-flex gap-[6px] text-[14px] mb-[20px]">
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#BCBCBC]"><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <p class="text-edgray mb-[24px]">Nullam dignissim ante scelerisque the is euismod fermentum odio sem semper the is erat a feugiat leo urna eget eros. Duis Aenean a imperdiet risus. Aliquam pellentesque.</p>
+                                            <div>
+                                                <h6 class="font-semibold text-[18px] text-edblue mb-[4px]">Ronald Richards</h6>
+                                                <span class="text-edgray">Co, Founder</span>
+                                            </div>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- single testimony -->
+                                    <!-- <div class="swiper-slide">
+                                        <div>
+                                            <div class="inline-flex gap-[6px] text-[14px] mb-[20px]">
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#F39F5F]"><i class="fa-solid fa-star"></i></span>
+                                                <span class="text-[#BCBCBC]"><i class="fa-solid fa-star"></i></span>
+                                            </div>
+                                            <p class="text-edgray mb-[24px]">Nullam dignissim ante scelerisque the is euismod fermentum odio sem semper the is erat a feugiat leo urna eget eros. Duis Aenean a imperdiet risus. Aliquam pellentesque.</p>
+                                            <div>
+                                                <h6 class="font-semibold text-[18px] text-edblue mb-[4px]">Ronald Richards</h6>
+                                                <span class="text-edgray">Co, Founder</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex gap-[10px] items-center absolute z-[1] bottom-[10px] right-0 ed-testimonial-slider-controls">
+                                    <button class="prev hover:text-edpurple"><i class="fa-solid fa-arrow-left-long"></i></button>
+                                    <div class="ed-testimonial-slider-pagination font-semibold text-[14px] text-edblue"></div>
+                                    <button class="next hover:text-edpurple"><i class="fa-solid fa-arrow-right-long"></i></button>
+                                </div>
+                            </div> -->
+
+                            <!-- slider dots -->
+                            <!-- <div class="flex items-start flex-col xxs:hidden shrink-0 space-y-[40px] relative z-[1] before:absolute before:top-[50%] before:-translate-y-[50%] before:right-[28px] before:w-[138px] before:h-[420px] before:bg-[url('../assets/img/testimonial-img-slider-vector.svg')] before:bg-no-repeat before:bg-center before:bg-[length:100%_100%] before:-z-[1] before:opacity-10 before:pointer-events-none">
+                                <div class="rounded-full overflow-hidden inline-block border border-edpurple p-[5px] even:ml-[40px]">
+                                    <img src="assets/img/user-2.png" alt="user" class="rounded-full w-[90px] aspect-square">
+                                </div>
+                                <div class="rounded-full overflow-hidden inline-block border border-edpurple p-[5px] even:ml-[40px]">
+                                    <img src="assets/img/user-3.png" alt="user" class="rounded-full w-[90px] aspect-square">
+                                </div>
+                                <div class="rounded-full overflow-hidden inline-block border border-edpurple p-[5px] even:ml-[40px]">
+                                    <img src="assets/img/user-4.png" alt="user" class="rounded-full w-[90px] aspect-square">
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- upcoming events -->
+                    <!-- <div> -->
+                        <!-- heading -->
+                        <!-- <div class="pb-[40px] sm:pb-[20px] flex justify-end md:justify-start bg-[url('../assets/img/testimonial-heading-vector.svg')] bg-no-repeat bg-right-bottom bg-[length:1000px] mb-[40px] md:bg-none md:mb-0">
+                            <div>
+                                <h6 class="ed-section-sub-title">Event</h6>
+                                <h2 class="ed-section-title !text-[30px]">Upcoming Events</h2>
+                            </div>
+                        </div> -->
+                        <!-- <div class="grow space-y-[30px]"> -->
+                            <!-- single upcoming event -->
+                            <!-- <div class="bg-white flex lg:flex-col items-start gap-x-[20px] gap-y-[10px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-[20px] p-[30px] xxs:p-[20px]"> -->
+                                <!-- date -->
+                                <!-- <div class="bg-edyellow rounded-[10px] font-medium text-[16px] text-black inline-block uppercase overflow-hidden text-center shrink-0">
+                                    <span class="bg-edpurple text-white text-[20px] block py-[7px] px-[30px] rounded-[10px]">2024</span>
+                                    <span class="px-[15px] p-[10px] block leading-[1.44] font-semibold">20 <span class="block">Oct</span></span>
+                                </div> -->
+
+                                <!-- text -->
+                                <!-- <div>
+                                    <h5 class="font-semibold text-[20px] mb-[7px]"><a href="#" class="hover:text-edpurple">SAT Implementation Workshops November 2026</a></h5>
+                                    <h6 class="text-edpurple font-medium">11:00 - 13:30</h6>
+                                    <p class="border-t border-[#002147]/20 pt-[17px] mt-[10px]">There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                </div>
+                            </div> -->
+
+                            <!-- single upcoming event -->
+                            <!-- <div class="bg-white flex lg:flex-col items-start gap-x-[20px] gap-y-[10px] shadow-[0_4px_30px_rgba(0,0,0,0.1)] rounded-[20px] p-[30px] xxs:p-[20px]"> -->
+                                <!-- date -->
+                                <!-- <div class="bg-edyellow rounded-[10px] font-medium text-[16px] text-black inline-block uppercase overflow-hidden text-center shrink-0">
+                                    <span class="bg-edpurple text-white text-[20px] block py-[7px] px-[30px] rounded-[10px]">2024</span>
+                                    <span class="px-[15px] p-[10px] block leading-[1.44] font-semibold">20 <span class="block">Oct</span></span>
+                                </div> -->
+
+                                <!-- text -->
+                                <!-- <div>
+                                    <h5 class="font-semibold text-[20px] mb-[7px]"><a href="#" class="hover:text-edpurple">SAT Implementation Workshops November 2026</a></h5>
+                                    <h6 class="text-edpurple font-medium">11:00 - 13:30</h6>
+                                    <p class="border-t border-[#002147]/20 pt-[17px] mt-[10px]">There are many variations of passages of Lorem Ipsum available, but the majority</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> --> 
+        <div class="mb-[25px]"></div>
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="bg-edblue relative z-[1] before:absolute before:inset-0 before:-z-[1] before:bg-[url('../assets/img/footer-bg.jpg')] before:opacity-[7%] before:bg-no-repeat before:bg-cover before:bg-center text-white">
+        <div class="mx-[19.71%] xxxl:mx-[14.71%] xxl:mx-[9.71%] xl:mx-[5.71%] md:mx-[12px]">
+            <!-- footer top -->
+            <div class="flex flex-wrap justify-between gap-[35px] pt-[100px] pb-[58px] border-b border-white/20">
+                <!-- footer about -->
+                <div class="max-w-[370px] xxs:max-w-full">
+                    <a href="index.html" class="inline-block mb-[23px]"><img src="assets/img/Powered-by-Logo.png" alt="logo"></a>
+                    <p class="text-[#D9D9D9] mb-[19px]">Digital Transformation <br/>Revolutionizing Businesses</p>
+
+                    <ul class="space-y-[17px]">
+                        <li class="flex items-center gap-[8px]">
+                            <span class="icon"><img src="assets/img/call-icon-yellow.svg" alt="icon"></span>
+                            <a href="tel:+92-332-466-6823" class="hover:text-edyellow">+92 332 466 6823</a>
+                        </li>
+
+                        <li class="flex items-center gap-[8px]">
+                            <span class="icon"><img src="assets/img/message-yellow.svg" alt="icon"></span>
+                            <a href="mailto:info@innovadorsolutions.com" class="hover:text-edyellow">info@innovadorsolutions.com</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- footer widget -->
+                <div>
+                    <h6 class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">Locations</h6>
+
+                    <div class="space-y-[18px]">
+                        <span class="icon"><img src="assets/img/us.svg" width="64" alt="icon"></span> <span style="padding-left: 15px;">USA</span>
+                        <span class="icon"><img src="assets/img/canada.svg" width="64" alt="icon"></span> CANADA
+                        <span class="icon"><img src="assets/img/qatar.svg" width="64" alt="icon"></span> QATAR
+                    </div>
+                </div>
+
+                <!-- footer widget -->
+                <div>
+                    <h6 class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">Locations</h6>
+
+                    <div class="space-y-[18px]">
+                        <span class="icon"><img src="assets/img/karachi.svg" width="64" alt="icon"></span> KARACHI
+                        <span class="icon"><img src="assets/img/hyderabad.svg" width="64" alt="icon"></span> HYDERABAD
+                        <span class="icon"><img src="assets/img/lahore.svg" width="64" alt="icon"></span> LAHORE
+                    </div>
+                </div>
+
+                <!-- footer widget -->
+                <div class="max-w-[300px]">
+                    <h6 class="font-semibold text-[18px] pb-[15px] mb-[30px] relative before:absolute before:bottom-0 before:left-0 before:h-[1.5px] before:w-[20px] before:bg-edyellow after:absolute after:bottom-0 after:left-[30px] after:h-[1.5px] after:w-[63px] after:bg-white">Newsletter</h6>
+
+                    <div>
+                        <p class="text-[#d9d9d9]/80 mb-[21px]">Sign up to seargin weekly newsletter to get the latest updates.</p>
+
+                        <!-- newsltr form -->
+                        <form class="border border-white/20 rounded-full flex h-[56px] p-[4px]">
+                            <input type="email" name="email" placeholder="Enter Email Address" class="text-[14px] bg-transparent w-full rounded-full focus:outline-none px-[20px]">
+                            <button class="bg-edyellow rounded-full aspect-square flex items-center justify-center hover:bg-edpurple">
+                                <img src="assets/img/icon/submit-icon.svg" alt="icon">
+                            </button>
+                        </form>
+
+                        <!-- social links -->
+                        <div class="flex gap-[20px] mt-[30px]">
+                            <span class="pl-[30px] font-medium text-[#d9d9d9] relative before:absolute before:left-0 before:top-[50%] before:-translate-y-[50%] before:h-[1px] before:w-[20px] before:bg-[#d9d9d9]">Follow on</span>
+                            <span class="inline-flex gap-[16px] text-[#d9d9d9]">
+                                <a href="https://innovadorsolutions.com/" target="_blank" class="hover:text-edyellow"><i class="fa fa-globe"></i></a>
+                                <a href="https://www.facebook.com/innovadors/" target="_blank" class="hover:text-edyellow"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="https://www.linkedin.com/company/innovadorsolutions/" target="_blank" class="hover:text-edyellow"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- footer bottom -->
+            <!-- <div class="flex flex-wrap items-center justify-between gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9]">
+                <p>&copy; All Copyright 2024 <a href="#">iSchool</a> by <a href="https://www.innovadorsolutions.com/">Innovador Solutions</a></p>
+
+                <div class="flex flex-wrap gap-[40px] xxs:gap-[15px]">
+                    <a href="#" class="hover:text-edyellow">Terms & Conditions</a>
+                    <a href="#" class="hover:text-edyellow">Privacy Policy</a>
+                </div>
+            </div> -->
+            <div class="flex flex-wrap items-center justify-center gap-[15px] pt-[20px] pb-[50px] text-[#d9d9d9] text-center">
+                <p>&copy; All Copyright 2024 <a href="#">iSchool</a> by <a href="https://www.innovadorsolutions.com/">Innovador Solutions</a></p>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <!-- js -->
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/fslightbox/fslightbox.js"></script>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
+
+</body>
+</html>
